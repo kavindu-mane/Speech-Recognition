@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kavindu Wanniarachchi">
+    <meta name="revised" content="26/05/2022">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Speech Recognition | HEXA2zero</title>
+    <link rel="icon" href="mic.png"/>
+
+</head>
+
+<body>
+
+    <div id="main-div">
+        <h2>Speech Recognition <span>by HEXA2zero</span></h2>
+        <div id="selection"><button id="speech-to" class="selected-one">Speech To Text</button>
+            <button id="command">Command</button>
+        </div>
+
+        <!-- speech to text -->
+        <div id="speech-to-text" >
+            <div id="contral">
+                <button id="startstop">
+                    <span class="material-symbols-outlined">play_arrow</span>
+                </button>
+                <button id="clear" class="disabled" disabled>
+                    <span class="material-symbols-outlined">clear_all</span>
+                </button>
+                <button id="copy" class="disabled" disabled>
+                    <span class="material-symbols-outlined">file_copy</span>
+                </button>
+                <button id="language">
+                    <span class="material-symbols-outlined">language</span> &ensp;
+                    <span id="language-change">English</span>
+                </button>
+            </div>
+
+            <div id="text-area">
+                <p><i>Say Something...
+                </i>
+                </p>
+            </div>
+
+        </div>
+
+          <!-- command -->
+        <div id="command-area">
+            <div id="contral-cmd">
+                <button id="startstop-cmd">
+                    <span class="material-symbols-outlined">play_arrow</span>
+                </button>
+                <button id="clear-cmd">
+                    <span class="material-symbols-outlined">clear_all</span>
+                </button>
+                <button id="add-cmd">
+                    <!-- class="button-active" -->
+                    <span class="material-symbols-outlined">add</span>
+                </button>
+                <button id="edit-cmd">
+                    <span class="material-symbols-outlined">edit</span>
+                </button>
+            </div>
+
+
+            <!-- command chat structure-->
+            <!-- <div class="teke command command-chat">
+                <p><i>Listening...</i></p>
+            </div> -->
+
+            <!-- <div class="give-result command-chat">
+                <p><i>Command not found!</i></p>
+            </div> -->
+
+            <!-- add command -->
+            <div class="add-command command-chat">
+                <input placeholder="Add command" id="add-command"></input>
+            </div>
+
+            <div class="add-action command-chat">
+                <input placeholder="Add website (Ex: https://www.google.com)" id="add-action"></input>
+            </div> 
+            
+            <button id="add-save" class="check-btn">
+                <span class="material-symbols-outlined">check</span>
+            </button>
+
+        </div>
+    </div>
+
+
+    <p id="copyright">&copy; Kavindu M Wanniarachchi | HEXA2zero</p>
+
+    <!-- notification structure -->
+    <!-- <div id="notification">
+        <p id="details"></p>
+    </div> -->
+
+    <!-- loading screen -->
+    <div id="loading">
+        <div id="loading-area">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <p>Your browser unsupported for Speech Recognition.Please try another one.</p>
+    </div>
+
+    <script src="speechJS.js"></script>
+
+</body>
+
+</html>
