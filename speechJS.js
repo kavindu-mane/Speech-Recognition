@@ -325,7 +325,12 @@ function commandReaction() {
     div.classList = "give-result command-chat";
     commandArea.appendChild(div);
 
-    if (commandMap.has(commandText.toUpperCase())) {
+    if(commandText.toUpperCase().includes("SEARCH")){
+        p.innerHTML = "<i>Success!</i>";
+        let tempVal = commandText.substring(7);
+        tempVal = tempVal.replace(" ", "+");
+        window.open("https://google.com/search?q="+tempVal);
+    }else if (commandMap.has(commandText.toUpperCase())) {
         p.innerHTML = "<i>Success!</i>";
         window.open(commandMap.get(commandText.toUpperCase()));
     } else {
