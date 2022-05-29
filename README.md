@@ -1,4 +1,4 @@
-# Speech-Recognition
+# Speech-Recognition v1.0.0
 Step - 1 : Download 4 files. and run speech.html file.
 
 ![img-1](https://user-images.githubusercontent.com/99143916/170833389-877442ef-8488-42d7-b287-264085c4032f.jpeg)
@@ -16,3 +16,7 @@ If you get error like this please use another browser because Web Speech API doe
 
 
 ![img-4](https://user-images.githubusercontent.com/99143916/170833800-311bd076-08a3-4583-81ef-39e41650c39c.png)
+
+
+Update v1.0.1
+Added Google Search with serach command (Ex: If you say "search usd to lkr", the program will open a new tab and search usd to lkr in Google.)
