@@ -19,4 +19,5 @@ If you get error like this please use another browser because Web Speech API doe
 
 
 Update v1.0.1
+
 Added Google Search with serach command (Ex: If you say "search usd to lkr", the program will open a new tab and search usd to lkr in Google.)
